@@ -1,2 +1,2 @@
 # DSAPractice
-Repo for code I have written while practicing DSA.
+Repo for the code I have written while practicing DSA.
