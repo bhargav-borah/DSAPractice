@@ -22,7 +22,7 @@ vector<int> moveZeros(int n, vector<int> a) {
     return a;
 }
 
-// Time complexity: O(n), Space complexity: O(1)
+// Time complexity: O(n), Space complexity: O(n)
 // vector<int> moveZeros(int n, vector<int> a) {
 //     vector<int> nonZeros;
 //     for (auto it: a) {
