@@ -24,7 +24,10 @@ vector<int> superiorElements(vector<int>&a) {
     for (int i = n - 2; i >= 0; i--) {
         bool isSuperior = true;
         for (int j = i + 1; j < n; j++) {
-            if (a[i] <= a[j]) isSuperior = false;
+            if (a[i] <= a[j]) {
+                isSuperior = false;
+                break;
+            }
         }
         if (isSuperior) res.push_back(a[i]);
     }
