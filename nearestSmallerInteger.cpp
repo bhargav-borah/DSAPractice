@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void nearestSmallerInteger(vector<int>& nums) {
+vector<int> nearestSmallerInteger(vector<int>& nums) {
     int n = nums.size();
     vector<int> res(n, -1);
     stack<int> st;
@@ -14,17 +14,17 @@ void nearestSmallerInteger(vector<int>& nums) {
         st.push(i);
     }
     
-    for (int i = 0; i < res.size(); i++) {
-        cout << res[i] << " ";
-    }
-    cout << endl;
+    return res;
 }
 
 int main()
 {
     vector<int> input = {4, 5, 2, 10, 8};
-    nearestSmallerInteger(input);
-    
+    vector<int> res = nearestSmallerInteger(input);
+    for (int i = 0; i < res.size(); i++) {
+        cout << res[i] << " ";
+    }
+    cout << endl;
 
     return 0;
 }
